@@ -29,10 +29,22 @@ This is a scalable and secure payment gateway service built using Node.js and Mo
 
 # Endpoints 
 
-POST /api/user/register: Create an account (Required fields-  name, email, password, phoneNumber) <br>
-POST /api/user/login: Login your accound (Required fields- email, password) <br>
-POST /api/user/logout: Logout your account (Required token while login your account) <br>
-POST /api/payment: Create a payment (Required token and fields - email, amount, currency, paymentMethod) <br>
-POST /api/payment/:id/process: Process a payment (Required token and paymentId) <br>
-GET /api/payment/:id/status: Retrieve payment status (Required token and paymentId) <br>
-POST /api/payment/:id/refund: Handle a refund (Required token and paymentId) <br>
+### POST /api/user/register: Create an account (Required fields-  name, email, password, phoneNumber) <br>
+![alt text](image.png) <br> <br>
+### POST /api/user/login: Login your accound (Required fields- email, password) <br>
+![alt text](image-1.png) <br> <br>
+### POST /api/user/logout: Logout your account (Required token while login your account) <br>
+![alt text](image-6.png) <br> <br>
+### POST /api/payment: Create a payment (Required token and fields - email, amount, currency, paymentMethod) <br>
+![alt text](image-2.png) <br> <br>
+### POST /api/payment/:id/process: Process a payment (Required token and paymentId) <br>
+![alt text](image-3.png) <br> <br>
+### GET /api/payment/:id/status: Retrieve payment status (Required token and paymentId) <br>
+![alt text](image-4.png) <br> <br>
+### POST /api/payment/:id/refund: Handle a refund (Required token and paymentId) <br>
+![alt text](image-5.png) <br> <br>
+
+
+
+
+# Developed by [Aadarsh Raj](https://www.linkedin.com/in/aadarsh-raj-80b862216/)
