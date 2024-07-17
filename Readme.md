@@ -5,7 +5,7 @@ This is a scalable and secure payment gateway service built using Node.js and Mo
 
 ### Data Flow and Interaction
 
-1. **Client** sends a request to create a payment.
+1. **Authenticated Client** sends a request to create a payment.
 2. **Payment Service** processes the request and stores the payment data in **MongoDB**.
 3. **Payment Processor** handles the payment processing logic.
 4. **Status Service** retrieves the payment status from the database.
@@ -16,15 +16,15 @@ This is a scalable and secure payment gateway service built using Node.js and Mo
 ### Payment Collection
 
 - User Schema <br>
-{
-  "userEmail": "string",
-  "amount": "number",
-  "currency": "string",
-  "paymentMethod": "string",
-  "status": "string",
-  "createdAt": "date",
-  "updatedAt": "date"
-}
+{ <br>
+  "userEmail": "string", <br>
+  "amount": "number", <br>
+  "currency": "string", <br>
+  "paymentMethod": "string", <br>
+  "status": "string", <br>
+  "createdAt": "date", <br>
+  "updatedAt": "date" <br>
+}<br>
 
 
 # Endpoints 
