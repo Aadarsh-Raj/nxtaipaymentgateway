@@ -9,7 +9,7 @@ router.post("/create", paymentController.createPayment);
 router.post("/:id/process", paymentController.processPayement);
 
 // get payment status
-router.post("/:id", paymentController.getPaymentStatus);
+router.get("/:id/status", paymentController.getPaymentStatus);
 
 // refund 
 router.post("/:id/refund", paymentController.refundPayment);
