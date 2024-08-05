@@ -13,6 +13,10 @@ const swaggerOptions = {
             {
                 url:'http://localhost:4000',
                 description: "Local Server"
+            },
+            {
+                url:"https://nxtaipaymentgateway.onrender.com",
+                description:"Hosted server"
             }
         ]
     },
