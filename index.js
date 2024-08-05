@@ -25,7 +25,7 @@ mongoose
     console.log(e);
   });
 app.use(morgan("dev"));
-
+console.log(JSON.stringify(swaggerSpec, null, 2));
 app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use("/api/user", userRouter);
 app.use("/api/payment", authMiddleware, paymentRoute);
