@@ -21,13 +21,19 @@ const router = express.Router();
  *           schema:
  *             type: object
  *             required:
+ *               - email
  *               - amount
  *               - currency
+ *               - paymentMethod
  *             properties:
  *               amount:
  *                 type: number
  *               currency:
  *                 type: string
+ *               email:
+ *                  type: string
+ *               paymentMethod:
+ *                  type: string
  *     responses:
  *       201:
  *         description: Payment created successfully
@@ -97,7 +103,7 @@ router.get("/:id/status", paymentController.getPaymentStatus);
  *       404:
  *         description: Payment not found
  */
-// refund 
+// refund
 router.post("/:id/refund", paymentController.refundPayment);
 
 module.exports = router;
